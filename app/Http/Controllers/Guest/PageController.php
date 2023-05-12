@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 class PageController extends Controller
 {
    public function index(){
+    $tains = Train::all();
     return view('home', compact('trains'));
    }
 }
